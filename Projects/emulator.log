@@ -1,0 +1,43 @@
+Starting Mednafen 1.22.2
+ Build information:
+   Compiled with gcc 9.3.0
+   Compiled against zlib 1.2.11, running with zlib 1.2.11(flags=0x000000a9)
+   Compiled against SDL 2.0.10(hg-12952:bc90ce38f1e2), running with SDL 2.0.10(hg-12952:bc90ce38f1e2)
+   Running with libsndfile-1.0.28
+ Base directory: /cs2110/.mednafen
+ Emulation modules: apple2 nes snes gb gba pce lynx md pcfx ngp psx ss ssfplay vb wswan sms gg snes_faust pce_fast demo cdplay
+ Opening lockfile...
+ Loading settings from "/cs2110/.mednafen/mednafen-09x.cfg"...
+  Loaded 14 valid settings and 0 unknown settings.
+ Initializing joysticks...
+ Loading PlayTheWall.gba...
+  Applying IPS file "./PlayTheWall.gba.ips"...
+   Failed: Error opening file "./PlayTheWall.gba.ips": No such file or directory
+  Using module: gba(GameBoy Advance)
+   Loading override settings from "/cs2110/.mednafen/gba.cfg"...
+    Failed: Error opening file "/cs2110/.mednafen/gba.cfg": No such file or directory
+   Loading override settings from "/cs2110/.mednafen/pgconfig/PlayTheWall.gba.cfg"...
+    Failed: Error opening file "/cs2110/.mednafen/pgconfig/PlayTheWall.gba.cfg": No such file or directory
+
+   ROM:       289KiB
+   ROM CRC32: 0x2c157d25
+   ROM MD5:   0x477ff11f608f1424d98df7facc2bb2b3
+
+  Loading custom palette from "/cs2110/.mednafen/palettes/gba.pal"...
+   Error: Error opening file "/cs2110/.mednafen/palettes/gba.pal": No such file or directory
+
+  Loading cheats from /cs2110/.mednafen/cheats/gba.cht...
+   Error opening file "/cs2110/.mednafen/cheats/gba.cht": No such file or directory
+
+ Initializing sound...
+  Using "ALSA" audio driver with SexyAL's default device selection.ALSA lib pcm_hw.c:1829:(_snd_pcm_hw_open) Invalid value for card
+ALSA Error: snd_pcm_open(&alsa_pcm, id ? id : "hw:0", SND_PCM_STREAM_PLAYBACK, 0) No such file or directory
+Error opening a sound device.
+Initializing video...
+Reverting to soft SDL driver because of error creating OpenGL context: Could not create GL context
+  Driver: Software SDL
+  Display Mode: 1600 x 900 x 24 bpp @ 60Hz  (Window: 480 x 320)
+  Fullscreen: No
+  Special Scaler: None
+  Scanlines: Off
+  Destination Rectangle: X=0, Y=0, W=480, H=320
